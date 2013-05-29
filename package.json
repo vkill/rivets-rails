@@ -1,0 +1,37 @@
+{
+  "name": "rivets.custom_by_vkill",
+  "description": "Rivets custom adapter, binders and formatters.",
+  "keywords": [
+    "rivets",
+    "adapter",
+    "binders",
+    "formatters"
+  ],
+  "version": "0.1.0",
+  "author": "vkill",
+  "url": "https://github.com/vkill/rivets-rails",
+  "main": "./dist/rivets.custom.binders.js",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/vkill/rivets-rails/blob/master/LICENSE.txt"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vkill/rivets-rails.git"
+  },
+  "dependencies": {
+    "rivets": "~0.5.4"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-coffee": "~0.7.0",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-uglify": "~0.2.0",
+    "grunt-contrib-watch": "~0.3.1"
+  },
+  "engines": {
+    "node": ">= 0.8.0"
+  }
+}
