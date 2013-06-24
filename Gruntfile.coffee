@@ -41,16 +41,25 @@ module.exports = (grunt) ->
           report: 'gzip'
         files:
           'dist/rivets.general_custom.js.min.js': 'dist/rivets.general_custom.js'
+    
+    copy:
+      main:
+        files: [
+          {expand: true, flatten: true, src: ['dist/**'], dest: 'vendor/assets/javascripts/'}
+        ]
 
     watch:
       all:
         files: ['src/*.coffee']
         tasks: ['build']
+    
+
 
   grunt.loadNpmTasks 'grunt-contrib-coffee'
   grunt.loadNpmTasks 'grunt-contrib-concat'
   grunt.loadNpmTasks 'grunt-contrib-uglify'
   grunt.loadNpmTasks 'grunt-contrib-watch'
+  grunt.loadNpmTasks 'grunt-contrib-copy'
 
   grunt.registerTask 'default', ['watch']
-  grunt.registerTask 'build',   ['coffee', 'concat', 'uglify']
+  grunt.registerTask 'build',   ['coffee', 'concat', 'uglify', 'copy']

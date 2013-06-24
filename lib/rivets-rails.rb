@@ -1,5 +1,5 @@
 require "rivets-rails/version"
-require "rivets-rails/railtie"
+require "rivets-rails/engine"
 
 module Rivets
   module Rails
