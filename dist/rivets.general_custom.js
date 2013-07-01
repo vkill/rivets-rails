@@ -1,5 +1,5 @@
 // rivets.custom_by_vkill.js
-// version: 0.1.0
+// version: 0.1.1
 // author: vkill
 // license: MIT
 (function() {

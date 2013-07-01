@@ -7,7 +7,7 @@
     "binders",
     "formatters"
   ],
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "vkill",
   "url": "https://github.com/vkill/rivets-rails",
   "main": "./dist/rivets.custom.binders.js",
@@ -22,7 +22,7 @@
     "url": "https://github.com/vkill/rivets-rails.git"
   },
   "dependencies": {
-    "rivets": "~0.5.4"
+    "rivets": "~0.5.10"
   },
   "devDependencies": {
     "grunt": "~0.4.1",
