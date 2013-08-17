@@ -34,6 +34,10 @@
     }
   };
 
+  rivets.binders.color = function(el, value) {
+    return el.style.color = value;
+  };
+
 }).call(this);
 
 (function() {
@@ -87,6 +91,15 @@
 
   rivets.formatters.length = function(value) {
     return value.length;
+  };
+
+  rivets.formatters.mask = function(value, left, right, mask) {
+    var formatted;
+
+    formatted = value.substring(0, left);
+    formatted + mask;
+    formatted += value.substring(value.length - right);
+    return formatted;
   };
 
 }).call(this);

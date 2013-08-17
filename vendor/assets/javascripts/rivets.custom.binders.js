@@ -19,4 +19,8 @@
     }
   };
 
+  rivets.binders.color = function(el, value) {
+    return el.style.color = value;
+  };
+
 }).call(this);

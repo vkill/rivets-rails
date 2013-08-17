@@ -59,5 +59,23 @@ rivets.formatters.preventDefault = (value) ->
 
 
 
+# 
+# custom
+# 
 rivets.formatters.length = (value) ->
   value.length
+
+# data-length="model.foo | length"
+
+
+# 
+# http://rivetsjs.com/
+# 
+rivets.formatters.mask = (value, left, right, mask) ->
+  formatted = value.substring(0, left)
+  formatted + mask
+  formatted += value.substring(value.length - right)
+  formatted
+
+# <span data-text="billing.cardNumber | mask 4 4 ********"></span>
+

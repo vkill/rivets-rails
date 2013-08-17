@@ -15,3 +15,9 @@ rivets.binders.content =
 
   unbind: (el) ->
     el.removeEventListener "input", @callback, false
+
+# 
+# http://rivetsjs.com/
+# 
+rivets.binders.color = (el, value) ->
+  el.style.color = value
