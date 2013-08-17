@@ -2,7 +2,7 @@ rivets = @rivets
 
 # 
 # Support of Contenteditable
-# http://jsfiddle.net/3yLQY/4/
+# from http://jsfiddle.net/3yLQY/4/
 # 
 rivets.binders.content =
   routine: rivets.binders.text
@@ -17,7 +17,9 @@ rivets.binders.content =
     el.removeEventListener "input", @callback, false
 
 # 
-# http://rivetsjs.com/
+# from http://rivetsjs.com/
 # 
 rivets.binders.color = (el, value) ->
   el.style.color = value
+
+# <span data-color="model.color">COLOR</span>

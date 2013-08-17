@@ -15,3 +15,4 @@ rivets.configure
 
     publish: (obj, keypath, value) ->
       obj[keypath] = value
+

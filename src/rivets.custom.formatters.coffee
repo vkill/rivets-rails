@@ -1,7 +1,7 @@
 rivets = @rivets
 
 # 
-# https://github.com/mikeric/rivets/wiki/Example-formatters
+# from https://github.com/mikeric/rivets/wiki/Example-formatters
 # 
 rivets.formatters.shortdate = (value) ->
   moment(value).format "YYYY-MM-DD"
@@ -69,7 +69,7 @@ rivets.formatters.length = (value) ->
 
 
 # 
-# http://rivetsjs.com/
+# from http://rivetsjs.com/
 # 
 rivets.formatters.mask = (value, left, right, mask) ->
   formatted = value.substring(0, left)
